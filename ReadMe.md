@@ -12,11 +12,11 @@ http://localhost:8080/swagger-ui/index.html
 
 ### Decisions
 
-We chose to use the publicly available github API to retrieve information about repositories.
+We chose to use the publicly available github API library instead of implementing our own.
 
 This allows us to easily retrieve information about repositories without having to build or manage the rest call ourselves.
 
-It does come with complexity that could increase fragility, so it was wrapped in a wrapper that could be easily replaced with another option if necessary.
+It does come with complexity that could increase fragility, so we chose to wrap it so that it could be easily replaced with another option if necessary.
 
 Adding a smoke test to ensure the application is running correctly and allows rapid testing without starting up the entire program.
 
